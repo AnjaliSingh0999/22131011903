@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+ # URL Shortener – Frontend Test Submission
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple **React-based URL Shortener Web App** built as part of the **Frontend Track** submission. It allows users to shorten URLs, view statistics, and log client-side activity.
 
-## Available Scripts
+ 
 
-In the project directory, you can run:
+  Tech Stack
 
-### `npm start`
+- **React (JavaScript)**
+- **Vanilla CSS** (with inline styles and gradients)
+- **No External Algorithm Libraries**
+- **Logging Middleware** (custom-built and integrated)
+- **Local Storage** for persistence
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  Features
 
-### `npm test`
+### 🔗 URL Shortener Page
+- Shorten up to **5 URLs concurrently**
+- Optional **validity period** in minutes
+- Optional **custom shortcode**
+- **Client-side validation** for all fields
+- Displays:
+  - Shortened URL
+  - Expiry countdown timer
+  - Creation timestamp
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#  Statistics Page
+- Shows list of all shortened URLs
+- Tracks:
+  - Total click count
+  - Click timestamp
+  - Click source (referrer)
+  - Approx. location (mocked / placeholder)
 
-### `npm run build`
+ 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#  Logging Middleware
+- All important client events (shorten request, errors, theme toggle) are logged with timestamp, type, and metadata
+- Logs are viewable in the UI (Logs Viewer)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#  Folder Structure
 
-### `npm run eject`
+FrontendTestSubmission/
+└── my-app/
+├── public/
+├── src/
+│ ├── components/
+│ │ ├── ShortenerForm.js
+│ │ ├── StatsPage.js
+│ │ ├── LogsViewer.js
+│ ├── pages/
+│ │ └── Home.js
+│ ├── LoggingMiddleware/
+│ │ └── logger.js
+│ ├── App.js
+│ └── index.js
+└── README.md
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#  How to Run the App
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+* Navigate to the app folder
+cd FrontendTestSubmission/my-app
 
-## Learn More
+# Install dependencies
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Start the development server
+npm start
+Screenshots
+Desktop View
+(Add screenshot here)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Mobile View
+(Add screenshot here)
 
-### Code Splitting
+🧠 Notes
+This project meets all Affordmed submission requirements:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+No Affordmed mentions in repo name, commits, or code.
 
-### Analyzing the Bundle Size
+Custom-built logging middleware
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Vanilla CSS only
 
-### Making a Progressive Web App
+React used (no frameworks like Bootstrap, etc.)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+👩‍💻 Author
+Roll No: 22131011903
+GitHub: @AnjaliSingh0999**
